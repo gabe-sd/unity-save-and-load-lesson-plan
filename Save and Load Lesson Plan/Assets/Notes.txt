@@ -1,0 +1,29 @@
+__Resources__
+	Brackeys tutorial: https://www.youtube.com/watch?v=XOjd_qU2Ido
+
+__Summary__
+We only need to save data that changes during a playthrough
+
+TO save the features we've implemented so far (excluding uture features) we need:
+	Grid which is composed of several tilemaps.
+	For each tilemap:
+		tile type (as a string) at each coordinate (as an int[] or float[])
+
+
+Types of data we can save:
+	Arrays of:
+	string
+	bool
+	float
+	int
+
+-We'll need a system to save and load an individual tilemap
+-We could make a file that contains a list of references to other files, each containing the data that repesents a tilemap
+-That list can be an arbitrary length
+-We can create tilemaps at runtime and populate them with the appropriate tiles based on the information in their save file
+
+Next steps:
+-Figure out how to save and load primitive data
+-Load/save one tile on a tilemap
+-Load/save an entile tilemap
+-Load/save several tilemaps
